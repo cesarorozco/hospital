@@ -1,0 +1,9 @@
+2013-11-02 16:21:26 Error: [MissingControllerException] Controller class DoctorssController could not be found.
+Exception Attributes: array (
+  'class' => 'DoctorssController',
+  'plugin' => NULL,
+)
+Request URL: /hospital/Doctorss
+Stack Trace:
+#0 /var/www/html/hospital/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

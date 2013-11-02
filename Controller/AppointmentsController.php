@@ -15,14 +15,16 @@ class AppointmentsController extends AppController {
  */
 	public $components = array('Paginator');
 
+    
 /**
  * index method
  *
  * @return void
  */
 	public function index() {
-		$this->Appointment->recursive = 0;
-		$this->set('appointments', $this->Paginator->paginate());
+		$this->set('appointments', $this->Appointment->find('all', array('order' => array('Appointment.date' => 'desc')))
+
+                        );
 	}
 
 /**
